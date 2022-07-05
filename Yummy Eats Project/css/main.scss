@@ -57,7 +57,7 @@ h1 span::before {
 
 .hero-bg{
   font-weight: bold;
-  margin: 0 0 3em;
+  margin: 0 0 0em;
   text-align: center;
 
   p{
@@ -187,6 +187,46 @@ img{
     margin:  2em 0 0;
     padding: 2em;
     border-radius: 1em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 3);
+
+    .left-form{
+      width: 70%;
+    }
+
+    input[type=button] {
+      height: fit-content;
+      font-size: 1em;
+      margin-left: 1em;
+      margin-top: 2.6em;
+      padding: .8em 0;
+      width: 30%;
+    }
+
+    label{
+      margin-bottom: 0;
+    }
+
+    form{
+      display: flex; 
+    }
    
   } 
+  
+  .authentic{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "bowl content";
+   
+  }
+  .right-col{
+    grid-area: content;
+
+  }
+
+  img{
+    grid-area: bowl;
+  
+  }
+
 }
+

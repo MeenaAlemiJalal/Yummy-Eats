@@ -52,7 +52,7 @@ h1 span::before {
 
 .hero-bg {
   font-weight: bold;
-  margin: 0 0 3em;
+  margin: 0 0 0em;
   text-align: center;
 }
 .hero-bg p {
@@ -96,7 +96,7 @@ h1 span::before {
   width: 100%;
   padding: 1em;
   color: white;
-  background-color: #e79537;
+  background-color: #df7700;
   border-radius: 0.5em;
   border: none;
   font-size: 1.3em;
@@ -159,5 +159,36 @@ img {
     margin: 2em 0 0;
     padding: 2em;
     border-radius: 1em;
+    box-shadow: 10px 10px 10px rgb(0, 0, 3);
+  }
+  .form-container .left-form {
+    width: 70%;
+  }
+  .form-container input[type=button] {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 1em;
+    margin-left: 1em;
+    margin-top: 2.6em;
+    padding: 0.8em 0;
+    width: 30%;
+  }
+  .form-container label {
+    margin-bottom: 0;
+  }
+  .form-container form {
+    display: flex;
+  }
+  .authentic {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "bowl content";
+  }
+  .right-col {
+    grid-area: content;
+  }
+  img {
+    grid-area: bowl;
   }
 }/*# sourceMappingURL=main.css.map */
