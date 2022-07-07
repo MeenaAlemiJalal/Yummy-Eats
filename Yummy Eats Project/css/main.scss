@@ -156,6 +156,22 @@ h1 span::before {
 
 img{
   width: 100%;
+
+}
+.overlay{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba (0, 0, 0, .9);
+  z-index: 1;
+  place-content: center;
+  color: white;
+  display: none;
+  opacity: 0;
+}
+
+.animate-overlay{
+  animation: overlay 3s forwords;
 }
 
 @media (min-width: 600px) {
@@ -216,10 +232,17 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-areas: "bowl content";
+
+   
+    
    
   }
   .right-col{
     grid-area: content;
+    padding: 0 10%;
+    text-align: left;
+    align-self: center;
+    align-items: center;
 
   }
 
@@ -228,5 +251,24 @@ img{
   
   }
 
+  h2{
+    padding-left: 1em;
+  }
 }
 
+.top-section{
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
