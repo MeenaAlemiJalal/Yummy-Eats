@@ -1,6 +1,6 @@
 /*custum properties*/
 :root {
-  line-height: 2em;
+  line-height: 1.8em;
 }
 
 body {
@@ -12,6 +12,8 @@ body {
 .hero-bg {
   background: url("../images/mae-mu-8Vh6ulKc50o-unsplash.jpg");
   background-size: cover;
+  padding-bottom: 4em;
+  text-align: center;
 }
 
 header {
@@ -31,10 +33,34 @@ h1 span {
   text-transform: uppercase;
   display: block;
   font-size: 1.4rem;
+  z-index: 1;
+  position: relative;
+}
+
+h1 span::before {
+  content: "";
+  background-color: #db892c;
+  width: 2.8em;
+  height: 0.4em;
+  z-index: -1;
+  bottom: 0;
+  margin-left: -0.3em;
+  position: absolute;
+}
+
+.hero-bg {
+  font-weight: bold;
+  margin: 0 1em 3em;
 }
 
 .top-section {
   text-align: center;
   color: white;
   font-weight: bold;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2em;
+  margin: 2em -1em 0;
 }/*# sourceMappingURL=main.css.map */
