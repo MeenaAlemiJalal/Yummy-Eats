@@ -16,16 +16,18 @@ body{
 }
 header{
  padding: 1em;
+ margin-bottom: 3.7em;
 
  a{
    color: white;
    text-decoration: none;
+   font-size: 1.3em;
    font-weight: bold;
  }
 }
  
 h1{
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: normal;
  
 
@@ -56,6 +58,11 @@ h1 span::before {
 .hero-bg{
   font-weight: bold;
   margin: 0 1em 3em;
+
+  p{
+    margin-bottom: 3.5em;
+    margin-top: 3.7em;
+  }
 }
 
 .top-section{
@@ -69,4 +76,95 @@ h1 span::before {
    padding: 2em;
    margin: 2em -1em 0;
   
+   label {
+    color: rgb(56, 125, 160);
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+  
+  }
+
+  input[type=text] {
+    width: 100%;
+    border: 1px solid #707070;
+    padding: 1em;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    box-sizing: border-box;
+
+  }
+  p{
+    color: gray;
+    font-weight: normal;
+    margin-top: .5em;
+    margin-bottom:1.5em;
+    
+  }
+  input[type=button]{
+    width: 100%;
+    padding: 1em;
+    color: white;
+    background-color: #e79537;
+    border-radius: .5em;
+    border:none;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+  
+
+    
+    
+  }
+
+  input[type=button]:hover{
+  
+    background-color: #d48b37;;
+    }
+
+
 }
+.authentic{
+  margin: 0;
+  text-align: center;
+  
+  h2{
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  z-index: -1em;
+
+  
+  }
+
+  h2::before{
+  content: '';
+  background-color:#e79537 ;
+  height: .4em;
+  width: 7.5em;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  margin-left: -.3em;
+  
+
+  }
+
+
+  img{
+  width: 100%;
+
+  }
+
+
+
+
+}
+
+.right-col p{ 
+  margin-bottom: 2.5em;
+  margin: 0 1em 2.8em;
+
+}
+
+

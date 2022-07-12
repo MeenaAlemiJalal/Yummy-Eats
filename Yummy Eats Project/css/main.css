@@ -18,15 +18,17 @@ body {
 
 header {
   padding: 1em;
+  margin-bottom: 3.7em;
 }
 header a {
   color: white;
   text-decoration: none;
+  font-size: 1.3em;
   font-weight: bold;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: normal;
 }
 h1 span {
@@ -52,6 +54,10 @@ h1 span::before {
   font-weight: bold;
   margin: 0 1em 3em;
 }
+.hero-bg p {
+  margin-bottom: 3.5em;
+  margin-top: 3.7em;
+}
 
 .top-section {
   text-align: center;
@@ -63,4 +69,68 @@ h1 span::before {
   background-color: white;
   padding: 2em;
   margin: 2em -1em 0;
+}
+.form-container label {
+  color: rgb(56, 125, 160);
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.form-container input[type=text] {
+  width: 100%;
+  border: 1px solid #707070;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-top: 1.2em;
+  box-sizing: border-box;
+}
+.form-container p {
+  color: gray;
+  font-weight: normal;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+.form-container input[type=button] {
+  width: 100%;
+  padding: 1em;
+  color: white;
+  background-color: #e79537;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form-container input[type=button]:hover {
+  background-color: #d48b37;
+}
+
+.authentic {
+  margin: 0;
+  text-align: center;
+}
+.authentic h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  z-index: -1em;
+}
+.authentic h2::before {
+  content: "";
+  background-color: #e79537;
+  height: 0.4em;
+  width: 7.5em;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  margin-left: -0.3em;
+}
+.authentic img {
+  width: 100%;
+}
+
+.right-col p {
+  margin-bottom: 2.5em;
+  margin: 0 1em 2.8em;
 }/*# sourceMappingURL=main.css.map */
