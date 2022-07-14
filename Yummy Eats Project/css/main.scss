@@ -57,7 +57,8 @@ h1 span::before {
 
 .hero-bg{
   font-weight: bold;
-  margin: 0 1em 3em;
+  margin: 0 0 3em;
+  text-align: center;
 
   p{
     margin-bottom: 3.5em;
@@ -80,7 +81,7 @@ h1 span::before {
     color: rgb(56, 125, 160);
     font-size: 1.3rem;
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: .7em;
     font-weight: bold;
   
   }
@@ -90,7 +91,7 @@ h1 span::before {
     border: 1px solid #707070;
     padding: 1em;
     border-radius: .5em;
-    margin-top: 1.2em;
+    margin-top: 1em;
     box-sizing: border-box;
 
   }
@@ -98,7 +99,7 @@ h1 span::before {
     color: gray;
     font-weight: normal;
     margin-top: .5em;
-    margin-bottom:1.5em;
+    margin-bottom:1.2em;
     
   }
   input[type=button]{
@@ -112,9 +113,6 @@ h1 span::before {
     font-weight: bold;
     cursor: pointer;
   
-
-    
-    
   }
 
   input[type=button]:hover{
@@ -147,18 +145,7 @@ h1 span::before {
   bottom: 0;
   margin-left: -.3em;
   
-
   }
-
-
-  img{
-  width: 100%;
-
-  }
-
-
-
-
 }
 
 .right-col p{ 
@@ -167,4 +154,39 @@ h1 span::before {
 
 }
 
+img{
+  width: 100%;
+}
 
+@media (min-width: 600px) {
+  section { 
+    margin: 0 4em;
+
+  }
+
+  .form-container{
+    margin: 2em -4em 0;
+  }
+  
+}
+ 
+@media (min-width: 880px) {
+
+  .top-section {
+    text-align: left;
+  }
+   .top-section p{
+     margin: 0 0 3em;
+  }
+
+   .hero-bg section{
+     width: 65%;
+   
+  }
+  .form-container{
+    margin:  2em 0 0;
+    padding: 2em;
+    border-radius: 1em;
+   
+  } 
+}
